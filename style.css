@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    background-color: #BFBFBF; /* Color de fondo */
+    color: #10403B; /* Color de texto principal */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #127369;
+}
+
+/* Contenedor de la galería */
+.gallery-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Grid de imágenes */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Imágenes de la galería */
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #8AA6A3;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto zoom al pasar el ratón */
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(16, 64, 59, 0.4);
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    padding: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(12, 12, 12, 0.9); /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen dentro del Modal */
+#modal-img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    border: 5px solid #127369;
+}
+
+/* Botón de cerrar Modal */
+#close-modal {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #F2F2F2;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover sobre botón cerrar */
+#close-modal:hover {
+    color: #F23838;
+}
+/* Estilos para el Footer */
+/* Estilos para el Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #10403B;
+    color: #F2F2F2;
+    font-size: 0.9rem;
+    border-top: 3px solid #127369;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
