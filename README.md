@@ -23,5 +23,5 @@ Una galería de imágenes interactiva con diseño continuo horizontal, efecto de
 ## 📁 Cómo clonar este repositorio
 
 ```bash
-git clone https://github.com/tuusuario/image-gallery.git
-cd image-gallery
+git clone https://github.com/tuusuario/img-gallery.git
+cd img-gallery
